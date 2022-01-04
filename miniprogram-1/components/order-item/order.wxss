@@ -1,0 +1,58 @@
+/* components/order-item/order.wxss */
+.order{
+    margin: 20rpx;
+    padding-top: 20rpx;
+    border-radius: 15rpx;
+    background-color: aqua;
+}
+
+.footer{
+    margin-top: 10rpx;
+    display: flex;
+    justify-content:space-between;
+}
+
+.money{
+    color: red;
+    font-size: 35rpx;
+    font-weight: 400;
+    width: 160rpx;
+    height: 50rpx;
+    text-align: center;
+    border-radius: 15rpx;
+    background-color: rgba(240, 120, 120, 0.144);
+}
+
+.oxt{
+font-size: 40rpx;
+font-weight: 600;
+}
+
+
+.name{
+    width: 200rpx;
+    font-size: 25rpx;
+    font-weight: 300;
+    margin-right: 10rpx;
+}
+.time{
+    margin-left: 10rpx;
+    font-size: 25rpx;
+    font-weight: 300;
+}
+.text{
+    font-size: 28rpx;
+    font-weight: 500;
+    margin: 5rpx 0rpx;
+    border-radius: 5rpx;
+}
+
+
+.orgin,
+.end {
+    margin: 3rpx 0rpx;
+    color: royalblue;
+    font-size: 25rpx;
+    font-weight: 500;
+}
+

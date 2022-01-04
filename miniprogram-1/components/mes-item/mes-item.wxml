@@ -1,0 +1,32 @@
+<!--components/mes-item/mes-item.wxml-->
+<view class="mes">
+    <van-card>
+        <view slot="thumb" class="user">
+            <van-image round width="70rpx" height="70rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+            <view class="name">
+                {{mes.name}}
+            </view>
+        </view>
+
+        <view slot="title">
+            <view class="text">
+                {{mes.text}}
+            </view>
+        </view>
+        <view slot="desc" class="images">
+            <view wx:for="{{mes.pic}}" wx:key="id">
+                <van-image class="pic" width="240rpx" height="240rpx" src="{{item.url}}" />
+            </view>
+        </view>
+
+        <view slot="footer" class="footer">
+            <view class="browse">
+                <van-icon name="eye-o" />
+                <span> {{mes.browse}}</span>
+            </view>
+            <view class="time">
+                发布时间  {{mes.time}}
+            </view>
+        </view>
+    </van-card>
+</view>

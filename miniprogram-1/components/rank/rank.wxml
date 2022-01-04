@@ -1,0 +1,13 @@
+<!--components/rank/rank.wxml-->
+<van-card tag="{{rank.rank}}" thumb="{{ rank.avatar }}">
+    <view slot="title">
+        <view class="name">
+            {{rank.name}}
+        </view>
+    </view>
+    <view slot="desc">
+        <view class="dec">
+            {{rank.type}} {{rank.num}}
+        </view>
+    </view>
+</van-card>

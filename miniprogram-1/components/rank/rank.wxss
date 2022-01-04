@@ -1,0 +1,14 @@
+/* components/rank/rank.wxss */
+
+.name{
+    margin-top: 15rpx;
+    font-size: 35rpx;
+    font-weight: 500;
+}
+
+.dec{
+    margin-top: 40rpx;
+    font-size: 40rpx;
+    font-weight: 500;
+    color: red;
+}

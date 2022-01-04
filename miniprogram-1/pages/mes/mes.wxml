@@ -1,0 +1,19 @@
+<!--pages/message/mes.wxml-->
+<page-meta>
+  <navigation-bar title="{{nbTitle}}" />
+</page-meta>
+
+<van-tabs  active="{{ active }}" bind:change="onChange">
+  <van-tab dot title="心动表白">
+    <mes-item></mes-item>
+  </van-tab>
+  <van-tab title="吐槽一下">
+    <mes-item></mes-item>
+  </van-tab>
+  <van-tab title="失物招领">
+    <mes-item></mes-item>
+  </van-tab>
+  <van-tab dot title="跳蚤市场">
+    <mes-item></mes-item>
+  </van-tab>
+</van-tabs>
