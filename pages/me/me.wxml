@@ -1,0 +1,70 @@
+<!--pages/me/me.wxml-->
+<page-meta>
+    <navigation-bar title="{{nbTitle}}" />
+</page-meta>
+
+<!-- 个人信息栏 -->
+<view class="unuser" wx:if="{{!islogin}}" bindtap="loginClick">
+    点击一键登陆，体验完整功能!
+</view>
+<view class="user" wx:if="{{islogin}}" >
+    <van-image round width="110rpx" height="110rpx" src="{{user.avatar}}" />
+    <span class="user-mes">
+        <view>ID:{{user.id}}</view>
+        <view>{{user.name}}</view>
+    </span>
+</view>
+
+<view class="user-bar">
+    <view class="bar" bindtap="barClick" wx:for="{{bar}}" data-index='{{index}}' wx:key="index">
+        <van-icon size="50rpx" name="{{item.icon}}" />
+        <view>{{item.mes}}</view>
+    </view>
+
+</view>
+
+<view class="user-data">
+    <view class="user-data-base">
+        用户 ID.{{user.id}}的数据
+    </view>
+
+    <view class="data">
+        <view class="data-item">
+            <view class="num">
+                {{user.do}}单
+            </view>
+            <view class="data-text">
+                已发布的订单
+            </view>
+        </view>
+
+        <view class="data-item">
+            <view class="num">
+                {{user.help}}单
+            </view>
+            <view class="data-text">
+                已完成的订单
+            </view>
+        </view>
+
+        <view class="data-item">
+            <view class="num">
+                ¥ {{user.allM}}.00
+            </view>
+            <view class="data-text">
+                已赚取金额
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="cell" >
+    <van-cell icon="flag-o" size="large" title="申请接单" is-link />
+    <van-cell icon="comment-circle-o" size="large" title="订阅私信" is-link />
+    <van-cell icon="service-o" size="large" title="微信客服" is-link />
+    <van-cell bindtap="outClick"   icon="friends-o" size="large" title="退出登陆" is-link />
+</view>
+
+<view class="footer">
+</view>
+<van-divider contentPosition="center">当前版本:1.0.0</van-divider>

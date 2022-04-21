@@ -1,0 +1,34 @@
+<!--components/order-item/order.wxml-->
+<view class="order">
+    <van-card>
+        <view slot="title">
+            <view class="oxt">{{order.type}}</view>
+            <text class="name">{{order.name}}</text>
+            <text class="time">{{order.time}}</text>
+        </view>
+        
+        <view slot="desc">
+            <view class="text">
+                {{order.mes}}
+            </view>
+            <view class="location">
+                <view class="orgin">
+                   {{order.start}} : {{order.sl}}
+                </view>
+                <view class="end">
+                   {{order.endL}} : {{order.el}}
+                </view>
+            </view>
+        </view>
+
+        <view slot="footer" class="footer">
+            <view class="dt">
+                期望时间：{{order.endTime}}
+            </view>
+            <view class="money">
+                {{"悬赏 ¥" + order.money}}
+            </view>
+        </view>
+    </van-card>
+
+</view>

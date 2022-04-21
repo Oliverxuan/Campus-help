@@ -1,0 +1,70 @@
+<!--pages/index/index.wxml-->
+
+<!-- header -->
+
+
+<!-- 登陆状态信息栏 -->
+<view class="login" wx:if="{{!islogin}}" bindtap="loginClick">
+请先登陆，体验完整功能~
+</view>
+<view class="mes" wx:if="{{islogin}}" >
+  <van-image   class="avatar" round width="90rpx" height="90rpx" src="{{avatar}}" />
+  <!-- <view class="btn" wx:if="{{!islogin}}" size="mini" bindtap="loginClick">
+  登陆
+  </view> -->
+  <!-- <view class="btn" wx:if="{{islogin}}" size="mini" bindtap="outClick">
+  退出
+  </view> -->
+  <view   class="username">
+  {{userName}}
+  </view>
+  <van-cell title="当前院校:" value="{{location}}" title-width="150rpx" size="large" center icon="location-o" />
+</view>
+
+<!-- 公告栏 -->
+<van-notice-bar
+  left-icon="volume-o"
+  text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
+/>
+
+<!-- 首页导航栏 -->
+<swiper class="banner" indicator-dots autoplay circular>
+  <block wx:for="{{bannerList}}" wx:key="bannerId">
+    <swiper-item class="item">
+      <image class="image" mode="aspectFill" src="{{item.pic}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<!-- nav-bar -->
+<view class="bar">
+  <view wx:for="{{bar}}" wx:key="id">
+    <view class="item">
+      <van-icon size="70rpx" color="#07c160" name="{{item.icon}}" />
+      <text >
+        {{item.name}}
+      </text>
+    </view>
+  </view>
+</view>
+
+<!--更多内容 -->
+<van-divider
+  contentPosition="center"
+  customStyle="color: #07c160; border-color: #07c160; font-size: 30rpx;"
+>
+  帮帮状态
+</van-divider>
+
+<van-steps steps="{{ steps }}" active="{{ active }}" />
+
+
+
+
+
+
+
+<!-- footer  -->
+
+<!-- tabbar -->

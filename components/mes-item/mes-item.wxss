@@ -1,0 +1,47 @@
+/* components/mes-item/mes-item.wxss */
+.mes{
+    margin: 20rpx 0 0 0;
+    padding: 20rpx 0 0 0;
+    border-radius: 15rpx;
+   background-color: aqua;
+}
+.user {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 20rpx;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+}
+
+.text{
+    font-size: 25rpx;
+    font-weight: 450;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    margin-top: 30rpx;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.time{
+    font-size: 25rpx;
+    font-weight: 400;
+    color: rgb(129, 129, 129)
+}
+
+.browse{
+    margin-left: 160rpx;
+    font-size: 25rpx;
+    font-weight: 500;
+    color: rgb(129, 129, 129)
+}

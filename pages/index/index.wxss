@@ -1,0 +1,63 @@
+/* pages/index/index.wxss */
+
+
+.mes {
+  display: flex;
+  justify-content: space-between;
+  height: 90rpx;
+  background-color: #fff;
+  margin: 10rpx 20rpx;
+  display: flex;
+  align-items: center;
+}
+.login{
+  height: 90rpx;
+  background-color: rgb(243, 222, 104);
+  margin: 10rpx 20rpx;
+  border-radius: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  margin-left: 20rpx;
+  font-size: 40rpx;
+}
+
+.banner {
+  margin: 20rpx 20rpx;
+}
+
+.banner .item {
+  display: flex;
+}
+
+.banner .item .image {
+  width: 100%;
+  height: 150px;
+  border-radius: 8rpx;
+}
+
+.bar {
+  margin: 0 20rpx;
+  border-radius: 8rpx;
+  height: 350rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item {
+  background-color: rgba(95, 95, 95, 0.055);
+  border-radius: 18rpx;
+  width: 160rpx;
+  height: 160rpx;
+  text-align: center;
+  line-height: 70rpx;
+}
+.username{
+  margin-left: 20rpx;
+  color: rgb(43, 41, 41);
+}

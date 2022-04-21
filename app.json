@@ -1,0 +1,37 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/me/me",
+        "pages/help/help",
+        "pages/mes/mes"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "校园帮帮",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "custom": true,
+        "color": "#000000",
+		"selectedColor": "#000000",
+		"backgroundColor": "#000000",
+      "list": [
+          {
+        "pagePath": "pages/index/index"
+        
+      },
+          {
+        "pagePath": "pages/help/help"
+      },
+          {
+        "pagePath": "pages/mes/mes"
+      },
+          {
+        "pagePath": "pages/me/me"
+      }
+    ]
+    },
+  
+    "sitemapLocation": "sitemap.json"
+}

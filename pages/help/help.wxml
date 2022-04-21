@@ -1,0 +1,47 @@
+
+
+<!--pages/help/help.wxml-->
+
+<!-- 顶部名称 -->
+<page-meta>
+    <navigation-bar title="{{nbTitle}}" />
+</page-meta>
+
+<!-- tab 标签选择栏 -->
+<van-tabs
+ animated 
+ swipeable 
+ color="#009ad6"
+  active="{{ active }}" 
+  bind:change="onChange"
+  class="{{showModalView?'tripList_root':''}}"
+  >
+  <!-- 校园帮助 -->
+    <van-tab dot title="校园帮">
+        <!-- 第二级选择栏 地址  悬赏条件 -->
+        <van-dropdown-menu  >
+            <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+            <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+            <van-dropdown-item value="{{ value3 }}" options="{{ option3 }}" />
+        </van-dropdown-menu>
+       <order></order>
+    </van-tab>
+
+    <!-- 我发出的 -->
+    <van-tab title="我发出的"> 
+          <order></order>
+</van-tab>
+
+    <!-- 我的帮助 -->
+    <van-tab dot title="我帮助的">
+        <order></order>
+    </van-tab>
+
+    <!-- 帮助榜单 -->
+    <van-tab title="帮助榜单">
+        <van-dropdown-menu >
+            <van-dropdown-item value="{{ case1 }}" options="{{ rank }}" />
+        </van-dropdown-menu>
+        <rank></rank>
+    </van-tab>
+</van-tabs>
